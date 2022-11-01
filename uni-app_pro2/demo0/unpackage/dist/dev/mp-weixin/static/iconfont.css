@@ -1,0 +1,205 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3585315 */
+  src: url('/static/iconfont.ttf') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-shop:before {
+  content: "\e6ae";
+}
+
+.icon-noData:before {
+  content: "\e60b";
+}
+
+.icon-sousuo:before {
+  content: "\e646";
+}
+
+.icon-search:before {
+  content: "\e620";
+}
+
+.icon-daipingjia:before {
+  content: "\e634";
+}
+
+.icon-concern:before {
+  content: "\e63a";
+}
+
+.icon-daishouhuo1:before {
+  content: "\e63b";
+}
+
+.icon-daishouhuo:before {
+  content: "\e640";
+}
+
+.icon-daifahuo:before {
+  content: "\e641";
+}
+
+.icon-returned:before {
+  content: "\e644";
+}
+
+.icon-daizhifu:before {
+  content: "\e645";
+}
+
+.icon-edit:before {
+  content: "\e638";
+}
+
+.icon-share:before {
+  content: "\e639";
+}
+
+.icon-dizhi:before {
+  content: "\e636";
+}
+
+.icon-dingdan:before {
+  content: "\e637";
+}
+
+.icon-shoucang:before {
+  content: "\e63c";
+}
+
+.icon-qianbao:before {
+  content: "\e63f";
+}
+
+.icon-setting:before {
+  content: "\e63d";
+}
+
+.icon-youhuiquan:before {
+  content: "\e643";
+}
+
+.icon-ListBox:before {
+  content: "\e7ca";
+}
+
+.icon-shitu:before {
+  content: "\e7cb";
+}
+
+.icon-shanchu:before {
+  content: "\e632";
+}
+
+.icon-zhaopian:before {
+  content: "\e613";
+}
+
+.icon-A4:before {
+  content: "\e604";
+}
+
+.icon-qiehuan:before {
+  content: "\ed17";
+}
+
+.icon-daili:before {
+  content: "\e614";
+}
+
+.icon-bangding:before {
+  content: "\e650";
+}
+
+.icon-log:before {
+  content: "\e606";
+}
+
+.icon-team:before {
+  content: "\e60d";
+}
+
+.icon-machine:before {
+  content: "\e617";
+}
+
+.icon-shouyimingxi:before {
+  content: "\e618";
+}
+
+.icon-tixianjilu:before {
+  content: "\e62c";
+}
+
+.icon-machine-copy:before {
+  content: "\ec7c";
+}
+
+.icon-user:before {
+  content: "\e64a";
+}
+
+.icon-calendar:before {
+  content: "\e633";
+}
+
+.icon-sex:before {
+  content: "\e642";
+}
+
+.icon-verCode:before {
+  content: "\e624";
+}
+
+.icon-purge:before {
+  content: "\e605";
+}
+
+.icon-delete:before {
+  content: "\ec7b";
+}
+
+.icon-down:before {
+  content: "\ed18";
+}
+
+.icon-right:before {
+  content: "\eb8a";
+}
+
+.icon-gongnengdingyi:before {
+  content: "\eb62";
+}
+
+.icon-theme:before {
+  content: "\eb6e";
+}
+
+.icon-about:before {
+  content: "\e635";
+}
+
+.icon-change:before {
+  content: "\e63e";
+}
+
+.icon-shezhi:before {
+  content: "\e8b7";
+}
+
+.icon-mima:before {
+  content: "\e615";
+}
+
+.icon-shouji:before {
+  content: "\e6c7";
+}
+
