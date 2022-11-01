@@ -1,0 +1,37 @@
+{
+    "uni-app": {
+        "scripts": {
+            "mp-dingtalk": {
+                "title": "钉钉小程序",
+                "env": {
+                    "UNI_PLATFORM": "mp-alipay"
+                },
+                "define": {
+                    "MP-DINGTALK": true
+                }
+            }
+        }
+    },
+    "dependencies": {
+        "copy-webpack-plugin": "^5.1.1",
+        "jweixin-module": "^1.6.0"
+    },
+    "devDependencies": {
+        "js-md5": "^0.7.3"
+    },
+    "id": "sju-uniapp",
+    "displayName": "uniapp开发模板",
+    "version": "1.0.4",
+    "description": "uniapp+ vuex快速开发模板、分包优化、自定义导航栏、主题切换，使用案例正在紧急编写中",
+    "keywords": [
+        "sju-uniapp",
+        "uniapp",
+        "vuex"
+    ],
+    "dcloudext": {
+        "category": [
+            "uni-app前端模板",
+            "uni-app前端项目模板"
+        ]
+    }
+}

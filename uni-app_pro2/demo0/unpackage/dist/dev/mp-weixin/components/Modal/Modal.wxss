@@ -1,0 +1,159 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+/* ============ 整体风格样式变量 =============== */
+/* ==================
+         模态窗口
+ ==================== */
+.Modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1110;
+  opacity: 0;
+  outline: 0;
+  text-align: center;
+  -webkit-transform: scale(1.185);
+          transform: scale(1.185);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-perspective: 2000rpx;
+          perspective: 2000rpx;
+  background: rgba(0, 0, 0, 0.6);
+  transition: all 0.3s ease-in-out 0s;
+  pointer-events: none;
+}
+.Modal::before {
+  content: " ";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.Modal.show {
+  opacity: 1;
+  transition-duration: 0.3s;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  overflow-x: hidden;
+  overflow-y: auto;
+  pointer-events: auto;
+}
+.Dialog {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+  width: 680rpx;
+  max-width: 100%;
+  background-color: #f8f8f8;
+  border-radius: 10rpx;
+  overflow: hidden;
+}
+.Modal.bottom-modal::before {
+  vertical-align: bottom;
+}
+.Modal.bottom-modal .Dialog {
+  width: 100%;
+  border-radius: 0;
+}
+.Modal.bottom-modal {
+  margin-bottom: -1000rpx;
+}
+.Modal.bottom-modal.show {
+  margin-bottom: 0;
+}
+.Modal.drawer-modal {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  display: flex;
+}
+.Modal.drawer-modal .Dialog {
+  height: 100%;
+  min-width: 200rpx;
+  border-radius: 0;
+  margin: initial;
+  transition-duration: 0.3s;
+}
+.Modal.drawer-modal.justify-start .Dialog {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+.Modal.drawer-modal.justify-end .Dialog {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+.Modal.drawer-modal.show .Dialog {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+.Modal .Dialog > .titleBar:first-child .closeIcon {
+  min-width: 100rpx;
+  margin-right: 0;
+  min-height: 100rpx;
+}
+/* ==================
+		弹窗标题
+ ==================== */
+.titleBar {
+  display: flex;
+  position: relative;
+  align-items: center;
+  min-height: 100rpx;
+  justify-content: space-between;
+  border-bottom: 1rpx solid rgba(0, 0, 0, 0.1);
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.title {
+  position: absolute;
+  text-align: center;
+  width: calc(100% - 350rpx);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  height: 60rpx;
+  font-size: 32rpx;
+  line-height: 60rpx;
+  cursor: none;
+  pointer-events: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.closeIcon {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+  max-width: 100%;
+}
+

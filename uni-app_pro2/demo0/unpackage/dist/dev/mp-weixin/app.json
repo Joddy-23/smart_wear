@@ -1,0 +1,101 @@
+{
+  "pages": [
+    "pages/tab/wear/wear",
+    "pages/tab/index/index",
+    "pages/tab/commu/commu",
+    "pages/tab/message/message",
+    "pages/tab/my/my"
+  ],
+  "subPackages": [
+    {
+      "root": "sub_intake",
+      "pages": [
+        "pages/login/login",
+        "pages/register/register",
+        "pages/forget/forget"
+      ],
+      "name": "intake"
+    },
+    {
+      "root": "sub_my",
+      "pages": [
+        "pages/changeInfo/changeInfo",
+        "pages/changePassword/changePassword",
+        "pages/setting/setting"
+      ],
+      "name": "my"
+    }
+  ],
+  "window": {
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "移动开发框架",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#EFEFF4"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/tab/index/index",
+        "iconPath": "static/tabBar/首页.png",
+        "selectedIconPath": "/static/tabBar/首页_选中.png"
+      },
+      {
+        "text": "穿搭",
+        "pagePath": "pages/tab/wear/wear",
+        "iconPath": "static/tabBar/穿搭.png",
+        "selectedIconPath": "/static/tabBar/穿搭_选中.png"
+      },
+      {
+        "text": "社区",
+        "pagePath": "pages/tab/commu/commu",
+        "iconPath": "static/tabBar/社区.png",
+        "selectedIconPath": "/static/tabBar/社区_选中.png"
+      },
+      {
+        "text": "消息",
+        "pagePath": "pages/tab/message/message",
+        "iconPath": "static/tabBar/消息.png",
+        "selectedIconPath": "/static/tabBar/消息_选中.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/tab/my/my",
+        "iconPath": "static/tabBar/我的.png",
+        "selectedIconPath": "/static/tabBar/我的_选中.png"
+      }
+    ],
+    "fontSize": "24upx",
+    "iconWidth": "48upx",
+    "spacing": "6upx",
+    "height": "100upx",
+    "color": "#999999",
+    "selectedColor": "#593A25",
+    "borderStyle": "white",
+    "backgroundColor": "#fff"
+  },
+  "preloadRule": {
+    "pages/tab/index/index": {
+      "network": "all",
+      "packages": [
+        "my"
+      ]
+    },
+    "pages/tab/my/my": {
+      "network": "all",
+      "packages": [
+        "my"
+      ]
+    }
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "您的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "requiredPrivateInfos": [
+    "getLocation"
+  ],
+  "usingComponents": {}
+}

@@ -1,0 +1,1 @@
+<view class="{{['Modal',(showModal)?'show':'']}}"><view class="Dialog"><view class="titleBar justify-end"><view class="title">{{title}}</view><view data-event-opts="{{[['tap',[['closeClick']]]]}}" class="closeIcon" bindtap="__e"><uni-icons vue-id="784cfbe6-1" type="closeempty" color="red" size="{{size}}" bind:__l="__l"></uni-icons></view></view><slot></slot></view></view>
